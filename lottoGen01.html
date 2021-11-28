@@ -1,4 +1,6 @@
-
+<!--1. 클릭 할때 마다 추첨된 번호 추가해서 넣기 ->OK-->
+<!--2. 추첨된 번호에 스타일적 요소 넣기-->
+<!--3. div를 동적으로 생성하여 붙여 넣을수 있는가? ->OK-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,13 +8,19 @@
     <title>Title</title>
 </head>
 <body>
+<style>
+    div{
+        width: 10%;
+        border: 1px solid black;
+    }
+</style>
+
 
 <!--로또번호 생성기 버튼. 1회 누를시 새로운 번호를 생성함-->
 
 <button onclick = "lottoGen()">로또번호생성 버튼</button>
 
 <!--로또번호가 들어오는 영역-->
-<div id = "lottoNums"></div>
 
 <!--외부에 있는 js파일을 불러오기-->
 <script type = "text/javascript" src ="lottoGen01.js"> </script>
